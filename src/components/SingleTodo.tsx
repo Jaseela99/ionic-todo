@@ -40,12 +40,12 @@ const SingleTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
     <form className="todos__single" onSubmit={(e) => handleEdit(e, todo.id)}>
       {edit ? (
         <IonInput
-        className="todos__single--text"
+          className="todos__single--text"
           value={text}
           onIonChange={(e) => setText(e.target.value)}
         />
       ) : todo.isDone ? (
-        <IonText className="todos__single--text">{todo.todo}</IonText>
+        <s className="todos__single--text">{todo.todo}</s>
       ) : (
         <span className="todos__single--text">{todo.todo}</span>
       )}

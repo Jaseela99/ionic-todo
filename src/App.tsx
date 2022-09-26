@@ -8,8 +8,8 @@ import {
   IonItem,
   IonToolbar,
 } from "@ionic/react";
-import "./components/styles.css"
-import {BsPen } from "react-icons/bs"
+import "./components/styles.css";
+import { BsPen } from "react-icons/bs";
 import InputField from "./components/InputField";
 import { Todo } from "./components/model";
 import TodoList from "./components/TodoList";
@@ -45,16 +45,16 @@ const App: React.FC = () => {
   };
 
   return (
-    <IonApp >
+    <IonApp>
       <IonHeader>
         <IonToolbar color="primary">
-          <IonTitle size="large" color="light">     
-          <BsPen className="icon"/>  Taskify
+          <IonTitle size="large" color="light">
+            <BsPen className="icon" /> Taskify
           </IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="container">
-        <IonItem >
+        <IonItem>
           <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
         </IonItem>
 

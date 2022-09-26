@@ -5,11 +5,11 @@ import { IonCard, IonGrid } from "@ionic/react";
 import "./styles.css"
 interface Props {
   todos: Todo[];
-  setTodos: any;
+  setTodos: any
 }
 const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
   return (
-    <IonGrid>
+    <IonGrid >
       {todos.map((todo) => (
         <IonCard>
           <SingleTodo
